@@ -1,0 +1,55 @@
+{
+
+	"name": "KRANOOK",
+	"short_name": "KRANOOK",
+	"description": "web app",
+	"scope": ".",
+	"start_url": "/",
+	"display": "standalone",
+	"orientation": "any",
+	"theme_color": "#00b3ac",
+	"background_color": "#f6f6f6",
+	"lang": "en-US",
+	"dir": "ltr",
+
+
+
+	"related_applications": [{
+		"platform": "play",
+		"url": "http://play.google.com/.../app_name",
+		"id": "com.kranook.app"
+	}],
+
+
+
+	"icons": [{
+		"src": "/static/s-assets/icons/favicons/pf-fav.png",
+		"sizes": "64x64",
+		"type": "image/png"
+	},{
+		"src": "/static/s-assets/icons/favicons/pf-fav.png",
+		"sizes": "96x96",
+		"type": "image/png"
+	},{
+		"src": "/static/s-assets/icons/favicons/pf-fav.png",
+		"sizes": "128x128",
+		"type": "image/png"
+	}],
+
+
+
+	"screenshots": [{
+		"src": "/static/s-assets/icons/favicons/pf-fav.png",
+		"sizes": "640x480",
+		"type": "image/jpeg"
+	},{
+		"src": "/static/s-assets/icons/favicons/pf-fav.png",
+		"sizes": "340x220",
+		"type": "image/jpeg"
+	},{
+		"src": "/static/s-assets/icons/favicons/pf-fav.png",
+		"sizes": "1280x920",
+		"type": "image/jpeg"
+	}]
+
+}
