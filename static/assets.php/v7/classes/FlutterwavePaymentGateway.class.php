@@ -16,11 +16,6 @@ class FlutterwavePaymentGateway extends PaymentGateway{
 				'test_pk' => 'FLWPUBK_TEST-3674a507541a2e4aa114c1e26dbb7af7-X',
 				'test_encrypt' => 'FLWSECK_TEST2840fd35a823', 
 				
-				'live_sk' => '',
-				'live_pk' => '',
-				'live_encrypt' => 'bbc92f7863d5e5aa8a1cf0ee',
-				
-				'secret_hash' => 'BJIS-9df6e3bf65a633e61e90bf71c463b70cfd8c2-H',
 				
 			];
 			
