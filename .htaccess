@@ -1,0 +1,99 @@
+
+##HTID:565136: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+##php_value display_errors 1
+##DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:565136:
+
+#prevent directory file listing
+IndexIgnore *
+
+#prevent sniffing of .user.ini file
+<Files ".user.ini">
+
+	Require all denied
+	
+</Files>
+
+
+#Recommended Security Headers
+<IfModule mod_headers.c>
+	
+	#CSP VARIABLES
+	SetEnv CSP_Default "default-src 'self' ;"
+	SetEnv CSP_Script "script-src 'self' ajax.googleapis.com cdnjs.cloudflare.com cdn.rawgit.com dev-resource.test ;"
+	SetEnv CSP_Style "style-src 'self' 'unsafe-inline' ;"
+	SetEnv CSP_Font "font-src 'self' ;"
+	SetEnv CSP_Media "media-src 'self' google.com youtube.com facebook.com twitter.com instagram.com ;"
+	SetEnv CSP_Img "img-src 'self' ;"
+	SetEnv CSP_Form_Action "form-action 'self' ;"
+	SetEnv CSP_Frame_Ancestor "frame-ancestors 'self' ;"
+	SetEnv CSP_Report_Uri "report-uri https://kranook.report-uri.com/r/d/csp/enforce ;"
+	SetEnv CSP_Report_To "report-to default ;"
+	
+	Header set Cache-Control "no-cache,must-revalidate"
+	
+	Header set Content-Language "en"
+	
+	Header set X-Clacks-Overhead "GNU Terry Pratchett"
+	
+	Header set X-Powered-By "Why Do You Care"
+	
+	Header set X-Content-Type-Options "nosniff"
+	
+	Header set X-Frame-Options "SAMEORIGIN"
+	
+	Header set Referrer-Policy "strict-origin-when-cross-origin"
+	
+	Header set X-XSS-Protection "1; mode=block; report=https://kranook.report-uri.com/r/d/xss/enforce"
+	
+	Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+	
+	Header set Expect-CT "enforce, max-age=2592000, report-uri=https://kranook.report-uri.com/r/d/ct/reportOnly"
+	
+	Header set Feature-Policy "geolocation 'none'; midi 'none'; camera 'none'; usb 'none'; magnetometer 'none'; accelerometer 'none'; vr 'none'; speaker 'none'; ambient-light-sensor 'none'; gyroscope 'none'; microphone 'none'; vibrate 'none'; auto-play 'none'; document-domain 'none'; encrypted-media 'none'; payment 'none'; fullscreen 'none'; picture-in-picture 'none'; sync-xhr 'none'"
+	
+	Header always set Permissions-Policy "geolocation=(), midi=(), camera=(), usb=(), magnetometer=(), accelerometer=(), vr=(), speaker=(), ambient-light-sensor=(), gyroscope=(), microphone=(), vibrate=(), auto-play=(), document-domain=(), encrypted-media=(), payment=(), fullscreen=(), picture-in-picture=(), sync-xhr=()"
+	
+	Header always set Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' *.ajax.googleapis.com *.cloudflare.com *.rawgit.com dev-resources.test; style-src 'self' 'unsafe-inline' dev-resources.test; font-src 'self'; media-src 'self' *.google.com *.youtube.com *.facebook.com *.twitter.com *.instagram.com; img-src 'self'; form-action 'self'; frame-ancestors 'self'; report-uri https://kranook.report-uri.com/r/d/csp/enforce;"
+	
+	#Header always set Content-Security-Policy-Report-Only "%{ENV:CSP_Default}e %{ENV:CSP_Script}e %{ENV:CSP_Style}e %{ENV:CSP_Font}e %{ENV:CSP_Media}e %{ENV:CSP_Img}e %{ENV:CSP_Form_Action}e %{ENV:CSP_Frame_Ancestor}e %{ENV:CSP_Report_Uri}e %{ENV:CSP_Report_To}e"
+	
+	#Header always set Content-Security-Policy "frame-ancestors 'self'; default-src 'self'; %{ENV:CSP_SCRIPT}e media-src 'self' google.com youtube.com facebook.com twitter.com instagram.com; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; form-action 'self'; report-uri https://kranook.report-uri.com/r/d/csp/enforce; report-to default"
+	
+	#Header always set X-Content-Security-Policy "frame-ancestors 'self'; default-src 'self'; %{ENV:CSP_SCRIPT}e media-src 'self' google.com youtube.com facebook.com twitter.com instagram.com; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; form-action 'self'; report-uri https://kranook.report-uri.com/r/d/csp/enforce; report-to default"
+	
+	Header set Report-To '{"group":"default","max_age":31536000,"endpoints":[{"url":"https://kranook.report-uri.com/a/d/g"}],"include_subdomains":true}'
+	
+	Header set NEL '{"report_to":"default","max_age":31536000,"include_subdomains":true}'
+
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+	##Do not remove this line, otherwise mod_rewrite rules will stop working
+	##TURN ON REWRITING ENGINE
+	RewriteEngine On
+	RewriteBase /
+
+	###RENDER PAGES WITHOUT EXTENSION
+	Options +FollowSymLinks +MultiViews
+	#RewriteCond %{REQUEST_FILENAME} !-f [NC]
+	#RewriteRule ^([^\.]+)$  $1.php [NC,L]
+
+	##Redirect index to root domain
+	#RewriteRule ^index\.php$ - [L]
+
+	##USE NON-WWW ONLY
+	#RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+	#RewriteRule ^ http://%1%{REQUEST_URI} [L,R=301]
+
+	##REMOVE TRAILING SLASHES
+	#RewriteCond %{REQUEST_FILENAME} !-d
+	#RewriteRule ^(.*)(\.php)?/$ /$1 [L,R=302]
+
+
+	##SPA handler and ErrorDocument 404
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^.*$ /index.php [L,QSA]
+
+</IfModule>

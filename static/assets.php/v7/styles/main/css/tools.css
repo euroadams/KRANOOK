@@ -1,0 +1,288 @@
+/**RESISTOR***/
+.rcc-blk, td.rcc-blk, .rc3 select.rcc-blk, .rc3 option.rcc-blk, .rc3 option.rcc-blk:hover{
+	
+	background-color: #000;
+	color: #fff
+	
+}
+	
+.rcc-brw, td.rcc-brw, .rc3 select.rcc-brw, .rc3 option.rcc-brw, .rc3 option.rcc-brw:hover{
+	
+	background-color: #7d4302;
+	color: #fff
+	
+}
+	
+.rcc-red, td.rcc-red, .rc3 select.rcc-red, .rc3 option.rcc-red, .rc3 option.rcc-red:hover{
+	
+	background-color: #e60514;
+	color: #fff
+	
+}
+	
+.rcc-org, td.rcc-org, .rc3 select.rcc-org, .rc3 option.rcc-org, .rc3 option.rcc-org:hover{
+	
+	background-color: #f26b31;
+	color: #fff
+	
+}
+	
+.rcc-yel, td.rcc-yel, .rc3 select.rcc-yel, .rc3 option.rcc-yel, .rc3 option.rcc-yel:hover{
+	
+	background-color: #f2ea7c;	
+	color: #253529
+	
+}
+	
+.rcc-grn, td.rcc-grn, .rc3 select.rcc-grn, .rc3 option.rcc-grn, .rc3 option.rcc-grn:hover{
+	
+	background-color: #3cb057;
+	color: #fff
+	
+}
+	
+.rcc-blu, td.rcc-blu, .rc3 select.rcc-blu, .rc3 option.rcc-blu, .rc3 option.rcc-blu:hover{
+	
+	background-color: #0483de;
+	color: #fff
+	
+}
+	
+.rcc-vio, td.rcc-vio, .rc3 select.rcc-vio, .rc3 option.rcc-vio, .rc3 option.rcc-vio:hover{
+	
+	background-color: #9d2ca3;
+	color: #fff
+	
+}
+	
+.rcc-gry, td.rcc-gry, .rc3 select.rcc-gry, .rc3 option.rcc-gry, .rc3 option.rcc-gry:hover{
+	
+	background-color: #808080;
+	color: #fff
+	
+}
+	
+.rcc-wht, td.rcc-wht, .rc3 select.rcc-wht, .rc3 option.rcc-wht, .rc3 option.rcc-wht:hover{
+	
+	background-color: #fff;	
+	color: #253529
+	
+}
+	
+.rcc-gld, td.rcc-gld, .rc3 select.rcc-gld, .rc3 option.rcc-gld, .rc3 option.rcc-gld:hover{
+	
+	background-color: #d4af37;
+	color: #fff
+	
+}
+	
+.rcc-slv, td.rcc-slv, .rc3 select.rcc-slv, .rc3 option.rcc-slv, .rc3 option.rcc-slv:hover{
+	
+	background-color: #c0c0c0;
+	color: #fff
+	
+}
+
+.bars{
+	
+	position: relative;
+	max-width: 100%;
+	overflow-x: auto;
+	margin: 10px auto
+	
+}
+	
+.bars img{
+	
+	max-width: 100%;
+	min-width: 417px;
+	height: auto
+	
+}
+	
+.digit1-bar, .digit2-bar, .digit3-bar, .multiplier-bar, .multiplier-bar2, .tolerance-bar, .temp-coeff-bar{
+	
+	display: inline-block;
+	position: absolute;
+	width: 15px;
+	margin: 0 5px;	
+	border: 1px solid #000
+	
+}
+	
+.digit1-bar{
+	
+	top: 0;
+	left: 95px;
+	height: 80px
+	
+}
+	
+.digit2-bar{
+	
+	left: 130px
+	
+}
+	
+.digit3-bar{
+	
+	left: 160px	
+	
+}
+	
+.multiplier-bar{
+	
+	left: 160px	
+	
+}
+	
+.multiplier-bar2{
+	
+	left: 190px	
+	
+}
+	
+.tolerance-bar{
+	
+	left: 230px
+	
+}
+	
+.temp-coeff-bar{
+	
+	left: 270px
+	
+}
+	
+.digit2-bar, .digit3-bar, .multiplier-bar, .multiplier-bar2, .tolerance-bar, .temp-coeff-bar{
+	
+	top: 6px;
+	height: 67px
+	
+}
+
+/**CALENDAR**/
+.calendar{	
+	
+	width:	400px;	
+	text-align: center;	
+	text-transform: capitalize
+	
+}
+	
+.calendar th{
+	
+	color:	#fff;
+	background: #0000ff;
+	font-style: italic;
+	text-transform: uppercase
+	
+}
+	
+.calendar th, .calendar td{
+	
+	padding: 2px
+	
+}
+	
+.calendar td{
+	
+	background:	#555
+	
+}
+	
+.calendar th.cal-head{
+	
+	background: #000
+	
+}
+	
+.cal-foot{
+	
+	color: #0000ff;
+	text-align: left
+	
+}
+	
+.cal-nvg{
+	
+	margin-top: 10px
+	
+}
+	
+.calendar button{
+	
+	border-radius: 0;
+	background: #eee;
+	cursor: pointer;
+	line-height: 1.5
+	
+}
+	
+.cal-nvg button{
+	
+	margin-left: 10px;
+	float: right;
+	font-weight: 900;
+	font-size: 18px;
+	background: #0ff;
+	color: #000
+	
+}
+	
+.cal-foot select{
+	
+	height: 25px;
+	line-height: 25px;	
+	cursor: pointer
+	
+}
+	
+.cal-nvg button:hover{
+	
+	background: #0f8;
+	color: #ff0000
+	
+}
+	
+.cal-body button{
+	
+	color: #ff0000;
+	text-decoration: underline
+		
+}
+	
+.sdate-btn:hover{
+	
+	color: #fff;
+	background: #008000
+		
+}
+	
+.cal-body td:first-child button{
+	
+	background: #0ff;
+	color: #000
+	
+}
+	
+.cal-body .sdate-btn.active, .cal-body .sdate-btn.active-select{
+	
+	background: #0000ff;
+	color: #fff;
+	text-decoration: none
+	
+}
+	
+.cal-body .sdate-btn.active-select{
+	
+	background: #306
+	
+}
+	
+.calendar .output{
+	
+	color: #fff
+	
+}
+	
