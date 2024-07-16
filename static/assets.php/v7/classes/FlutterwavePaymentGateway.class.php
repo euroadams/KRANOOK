@@ -12,12 +12,17 @@ class FlutterwavePaymentGateway extends PaymentGateway{
 	//Replace this with your own live and test secret key and encryption key
 	private $API_DETAILS_ARR = [
 	
-				'test_sk' => 'FLWSECK_TEST-a8f4fbfb4ecc71e90bf71c463b70c313-X', 
-				'test_pk' => 'FLWPUBK_TEST-3674a507541a2e4aa114c1e26dbb7af7-X',
-				'test_encrypt' => 'FLWSECK_TEST2840fd35a823', 
-				
-				
-			];
+		'test_sk' => FLWV_API_KEYS['test_sk'], 
+		'test_pk' => FLWV_API_KEYS['test_pk'],
+		'test_encrypt' => FLWV_API_KEYS['test_encrypt'], 
+		
+		'live_sk' => FLWV_API_KEYS['live_sk'],
+		'live_pk' => FLWV_API_KEYS['live_pk'],
+		'live_encrypt' => FLWV_API_KEYS['live_encrypt'],
+		
+		'secret_hash' => FLWV_API_KEYS['secret_hash'],
+		
+	];
 			
 	private $API_SECRET_KEY;
 	private $API_ENC_KEY;

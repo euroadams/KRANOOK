@@ -12,13 +12,13 @@ class PaystackPaymentGateway extends PaymentGateway{
 	//Replace this with your own live and test secret key
 	private $API_DETAILS_ARR = [
 	
-				'test_sk' => 'sk_test_c2d8d6114517b4910cd8de0d4ed2a1a8c855af44', 
-				'test_pk' => 'pk_test_cbba4ce9dff67781e6280fb621d953e940ed38df', 
-				
-				'live_sk' => 'sk_live_a1fbc1ae7854382777675fc2d65b7e60fb05b69b',
-				'live_pk' => 'pk_live_720c596c6d3bd3d790d8811b8c7366aafaf8b03d',
-				
-			];
+		'test_sk' => PSTK_API_KEYS['test_sk'], 
+		'test_pk' => PSTK_API_KEYS['test_pk'], 
+		
+		'live_sk' => PSTK_API_KEYS['live_sk'],
+		'live_pk' => PSTK_API_KEYS['live_pk'],
+		
+	];
 	
 	private $API_SECRET_KEY;	
 	

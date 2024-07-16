@@ -12,11 +12,11 @@ class MonnifyPaymentGateway extends PaymentGateway{
 	//Replace this with your own live and test secret key and encryption key
 	private $API_DETAILS_ARR = [
 	
-				'api_k' => 'MK_TEST_XVXGKE2NEF', 
-				'api_sk' => 'N7JTJ4BZ8L9GYU6A5WWSPY6JQMR5DDSF', 
-				'contract_code' => '9718645815', 
-				
-			];
+		'api_k' => MNFY_API_KEYS['api_k'], 
+		'api_sk' => MNFY_API_KEYS['api_sk'], 
+		'contract_code' => MNFY_API_KEYS['contract_code'], 
+		
+	];
 			
 	private $API_SECRET_KEY;
 	private $API_CONTRACT_CODE;		

@@ -751,7 +751,7 @@ class Engine{
 	
 	
 	/*** Method for converting delimited strings to associative array ***/
-	public function str_to_assoc($str, $retAll=false, $isPhoneUrl=false, $seperatorDelimeter=",", $keyDelimeter="::"){
+	public function str_to_assoc($str, $buildUrl=false, $isPhoneUrl=false, $seperatorDelimeter=",", $keyDelimeter="::"){
 		
 		$assocArr = $assocUrlArr = array();
 		$arr = explode($seperatorDelimeter, $str);			
@@ -774,22 +774,26 @@ class Engine{
 			}
 			
 			$assocArr[$Key] = ($val = $kv[$valIndex]);
+
+			if($buildUrl){
 			
-			if($isPhoneUrl){
+				if($isPhoneUrl){
 
-				$val = $val.self::$hrefUrlTxtSep.'tel:'.preg_replace('#[^+0-9]#', '', $val);
+					$val = $val.self::$hrefUrlTxtSep.'tel:'.preg_replace('#[^+0-9]#', '', $val);
 
-			}elseif(self::email_validate($val)){
+				}elseif(self::email_validate($val)){
 
-				$val = $val.self::$hrefUrlTxtSep.'mailto:'.$val;
+					$val = $val.self::$hrefUrlTxtSep.'mailto:'.$val;
 
+				}
+
+				$assocUrlArr[$Key] = $this->add_http_protocol($val);
+				
 			}
-
-			$assocUrlArr[$Key] = $this->add_http_protocol($val);
 			
 		}
 		
-		return ($retAll? array($assocArr, $assocUrlArr) : $assocArr);
+		return ($buildUrl? array($assocArr, $assocUrlArr) : $assocArr);
 		
 	}
 	

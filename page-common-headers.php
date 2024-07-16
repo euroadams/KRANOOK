@@ -94,13 +94,15 @@ $pilotArr = array(
 		
 		"TAKE_DOWN_SITE", "THREAD_SLUG_CONSTANT", "THREAD_SLUG_STYLE", "UIBG_ADD_HOLE_COUNT", "SITE_SLOGAN",
 		
-		"SITE_MAIL_ADDRESSES", "SITE_SOCIAL_URLS", "SITE_HOT_LINES", "API_TEST_MODE"
+		"SITE_MAIL_ADDRESSES", "SITE_SOCIAL_URLS", "SITE_HOT_LINES", "API_TEST_MODE", 
+		"PSTK_API_KEYS", "FLWV_API_KEYS",  "MNFY_API_KEYS" 
 		
 	);
 	
 list($bankDetails, $minAdDeposit, $bannerT2Charge, $bannerT3Charge, $adPrmPurseTopupRate, $adPrmEligAmt, $intlMeansOfPayUrl, $textAdDiscountCharge,
 $textAdCharge, $modsLockOut, $showSeasonCards, $docExtension, $userUrlExtension, $takeDownSite, $threadSlugConstant, $threadSlugStyle,
-$uiBgAddHoleCount, $siteSlogan, $siteMailAddresses, $siteSocialUrls, $siteHotLines, $apiTestMode) = getAutoPilotState($pilotArr);
+$uiBgAddHoleCount, $siteSlogan, $siteMailAddresses, $siteSocialUrls, $siteHotLines, $apiTestMode,
+$paystackApiKeys, $flutterwaveApiKeys, $monnifyApiKeys) = getAutoPilotState($pilotArr);
 
 
 define('RSRC_PLUGS', array(
@@ -109,11 +111,18 @@ define('RSRC_PLUGS', array(
 	
 ));
 
+$paystackApiKeyArr = $ENGINE->str_to_assoc($paystackApiKeys);
+$flutterwaveApiKeyArr = $ENGINE->str_to_assoc($flutterwaveApiKeys);
+$monnifyApiKeyArr = $ENGINE->str_to_assoc($monnifyApiKeys);
+
 define('SITE_ACCESS_MIN_AGE', 13);
 define('SITE_SLOGAN', $siteSlogan);
 define('TAKE_DOWN_SITE', $takeDownSite);
 define('DOC_EXTENSION', $docExtension);
 define('API_TEST_MODE', $apiTestMode);
+define('PSTK_API_KEYS', $paystackApiKeyArr);
+define('FLWV_API_KEYS', $flutterwaveApiKeyArr);
+define('MNFY_API_KEYS', $monnifyApiKeyArr);
 define('ACCOUNT_TERMINATION_WAIT_DAYS', 2);
 define('ACCOUNT_TERMINATION_WAIT_HOURS', (ACCOUNT_TERMINATION_WAIT_DAYS * 24).' hours');
 define('USE_USER_URL_EXTENSION', $userUrlExtension);
