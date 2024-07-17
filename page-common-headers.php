@@ -40,7 +40,7 @@ Engine::autoload_classes($autoLoadlookUpBaseDirArr);
 
 
 /************************************************************************************************************/
-/********************************** INSTATIATE NECESSARY CLASSES ********************************************/
+/********************************** INSTANTIATE NECESSARY CLASSES ********************************************/
 /************************************************************************************************************/
 
 /*************************
@@ -65,10 +65,7 @@ $ENGINE->set_time_zone();
 /*************************
 INSTANTIATE/START DATABASE MANAGER
 *************************/
-define("DB_NAME", "eurotech2");
-define("DB_HOST", "eurotech.test");
-define("DB_USERNAME", "root");
-define("DB_PWD", "");
+require_once('.db.config.php');
 
 $dbm = new DataBaseManager("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USERNAME, DB_PWD);
 
