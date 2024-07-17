@@ -69,14 +69,6 @@ require_once('.db.config.php');
 
 $dbm = new DataBaseManager("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USERNAME, DB_PWD);
 
-//$dbm = new DataBaseManager("mysql:host=localhost;dbname=id204967_techcity", "id204967_techcity", "techcity+adimabua02");
-//$dbm = new DataBaseManager("mysql:host=localhost;dbname=provid33_eurotech", "provid33_pwealth", "PFwealth+P&A_20PFin90");
-//$dbm = new DataBaseManager("mysql:host=sql309.unaux.com;dbname=unaux_23099545_eurodesigns", "unaux_23099545", "EDAdimabua02");
-//$dbm = new DataBaseManager("mysql:host=sql213.unaux.com;dbname=unaux_23282028_eurotechs", "unaux_23282028", "ZoroS2019");
-//$dbm = new DataBaseManager("mysql:host=sql100.unaux.com;dbname=unaux_23807958_wkc", "unaux_23807958", "EartH2019");
-//$dbm = new DataBaseManager("mysql:host=sql106.unaux.com;dbname=unaux_24204462_gkc", "unaux_24204462", "ZoroS2019");
-//$dbm = new DataBaseManager("mysql:host=sql208.unaux.com;dbname=unaux_26779900_halls", "unaux_26779900", "ZoroS2020");
-
 
 //////////DEFINE CONSTANTS THAT REQUIRES DATABASE QUERY AFTER STARTING A DATASE CONNECTION//////
 
