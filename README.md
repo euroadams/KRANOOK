@@ -11,6 +11,7 @@ I understand that in crafting such an atmosphere, certain rules and regulations 
 
 The platform also incorporate an ad management system that allow advertisers run ads campaign on the community.
 
+> [!NOTE]
 > NOTE : ALL SAMPLES ARE FOR DEMONSTRATION PURPOSE ONLY
 
 ## Dark Theme Samples :
