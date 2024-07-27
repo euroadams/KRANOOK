@@ -32,5 +32,9 @@ The platform also incorporate an ad management system that allow advertisers run
 
 <img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-post-3.jpg" alt="Thread View Sample 3" width="auto" height="auto"/>
 
+## Dark Theme Samples :
+<img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-bk-fp.jpg" alt="Front Page Dark Theme Sample" width="auto" height="auto"/>
+
+<img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-bk-post.jpg" alt="Thread View Dark Theme Sample" width="auto" height="auto"/>
 
 
