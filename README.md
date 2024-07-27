@@ -10,3 +10,14 @@ One interesting thing about the community is that as members air their opinions 
 I understand that in crafting such an atmosphere, certain rules and regulations must be in place to help govern the do's and don'ts of the community, these have also been put in place by employing a decentralized moderation system that allocates moderation privileges based on reputation and ranking in the community.
 
 The platform also incorporate an ad management system that allow advertisers run ads campaign on the community.
+
+## Front Page Samples :
+<img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-fp-1.jpg" alt="Front Page Sample 1" width="auto" height="auto"/>
+
+<img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-fp-2.jpg" alt="Front Page Sample 2" width="auto" height="auto"/>
+
+<img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-fp-3.jpg" alt="Front Page Sample 3" width="auto" height="auto"/>
+
+<img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-fp-4.jpg" alt="Front Page Sample 4" width="auto" height="auto"/>
+
+<img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-fp-5.jpg" alt="Front Page Sample 5" width="auto" height="auto"/>
