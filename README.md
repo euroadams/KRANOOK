@@ -12,7 +12,7 @@ I understand that in crafting such an atmosphere, certain rules and regulations 
 The platform also incorporate an ad management system that allow advertisers run ads campaign on the community.
 
 > [!NOTE]
-> NOTE : ALL SAMPLES ARE FOR DEMONSTRATION PURPOSE ONLY
+> ALL SAMPLES ARE FOR DEMONSTRATION PURPOSE ONLY
 
 ## Dark Theme Samples :
 <img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-bk-fp.jpg" alt="Front Page Dark Theme Sample" width="auto" height="auto"/>
