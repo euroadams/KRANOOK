@@ -11,6 +11,8 @@ I understand that in crafting such an atmosphere, certain rules and regulations 
 
 The platform also incorporate an ad management system that allow advertisers run ads campaign on the community.
 
+> NOTE : ALL SAMPLES ARE FOR DEMONSTRATION PURPOSE ONLY
+
 ## Front Page Samples :
 <img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-fp-1.jpg" alt="Front Page Sample 1" width="auto" height="auto"/>
 
