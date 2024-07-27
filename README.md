@@ -21,3 +21,14 @@ The platform also incorporate an ad management system that allow advertisers run
 <img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-fp-4.jpg" alt="Front Page Sample 4" width="auto" height="auto"/>
 
 <img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-fp-5.jpg" alt="Front Page Sample 5" width="auto" height="auto"/>
+
+
+## Thread View Samples :
+<img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-post-1.jpg" alt="Thread View Sample 1" width="auto" height="auto"/>
+
+<img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-post-2.jpg" alt="Thread View Sample 2" width="auto" height="auto"/>
+
+<img src="https://github.com/euroadams/euroadams/blob/master/assets/public/work-samples/cf-post-3.jpg" alt="Thread View Sample 3" width="auto" height="auto"/>
+
+
+
